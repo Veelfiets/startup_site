@@ -2,13 +2,24 @@
 <html>
 <head>
   <title>StartupSite</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<h1>Bikewebsite</h1>
 <%= yield %>
-
+<div class="container"> 
+        <footer>
+        <ul class="list-inline">
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <p class="text-right"><small>&copy; Bikewebsite 2014</small></p>
+      </footer>
+    </div> <!-- /container -->
 </body>
 </html>
